@@ -1,0 +1,9 @@
+The solution is similar to a solution of knapsack problems.
+
+You iterate over the array elements and attempt to: 1- add the element to your total sum, 2- not adding the element to your total sum
+
+The solution is the sum between both function calls. Also memoization is done with the help of 3 states (index,current total sum, remaining elements)
+
+Since the input can include anything in the range of a 32bit signed int, we store in the memo array sum%d.
+
+You can check out this link for more information about the 0-1 knapsack: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
