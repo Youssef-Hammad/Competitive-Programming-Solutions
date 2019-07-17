@@ -1,0 +1,31 @@
+This solution uses Kadane 2D algorithm. You need to understand the 1D version first.
+
+Complexity for both solutions: 1D (O(n)), 2D(O(m^2*n)) where m is the number of columns and n is the number of rows.
+
+1D version: 
+
+Given an array of integers (not in a particular order) find the maximum sum formed by a sub-array.
+
+Solution: Suppose we create a variable (let's name it "total") to calculate the total sum while we're iterating over the array (initially set to 0).
+We then iterate over the array adding each element to "total", and calculating the maximum between total and a variable we'll create
+to calculate the maximum sum (let's call that "maxx"). If it any point in iterating total becomes less than 0. we set total to 0 (because it'll
+be better for us to start at 0 rather than keep a negative sum). With that move, we indicate the starting of a new sub-array and we keep on going.
+
+Note: It's better to, just in case, make a variable to store the largest element in the array (in case all elements were less than 0).
+
+
+2D version (Solution for this problem):
+
+This version is alot similar to the 1D version. First, we need to create a 1D array out of our 2D table (or sub-table).
+
+First off, we'll start by taking only the first column, then iterate over it to calculate the maximum sum using Kadane 1D.
+Then we take the first AND second columns, add each pair of elements together (for example a[0][0]+a[0][1], a[1][0]+a[1][1]) which will result
+in a 1D array. Then we can apply Kadane 1D to the resulting array and obtain the maximum sum from it, while maintaining the maximum sum we
+got so far from this process. Then we take the first 3 columns and add each 3 elements from the same row together (and so on).
+After that, you repeat the same steps but you start from the 2nd column this time (and repeat the whole process).
+Then again starting from the 3rd (and so on).
+
+Note: In this problem you WILL need to calculate the maximum element in case all elements were negative. The highest negative element will be
+its own maximum sub-rectangle.
+
+Hope this explanation was helpful. Thank you for reading
