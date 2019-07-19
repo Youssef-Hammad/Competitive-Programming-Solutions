@@ -1,0 +1,8 @@
+The solution is a pretty straight forward 0-1 knapsack (top-down approach) where you iterate over the treasures and at every index you either
+dive for the treasure or you continue iterating (You pick the maximum output of both function calls). 
+
+The function for building the optimal path is pretty similar to the actual dp function. The array "memo" already contains the optimal solution
+for every index (with our states being the current index "idx" we're on and the time remaining "tim"). So if not diving at the current index
+was equal to the optimal solution we have, we just go and build from there. Otherwise, we add the element to our vector "ans" and continue.
+
+You can check out this link for more information about the 0-1 knapsack: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
