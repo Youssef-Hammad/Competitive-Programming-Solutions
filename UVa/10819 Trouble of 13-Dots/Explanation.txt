@@ -1,0 +1,13 @@
+This solution apply a 0-1 knapsack (top-down approach) with handling for a special case.
+
+Given the case: 
+1900 3
+2000 5
+1950 2
+101 1
+
+The solution for this case is 3, since taking both 1950 and 101 will exceed $2000 (which will give you a $200 refund). 
+
+We consider the index, the money remaining, and whether or not we got a refund, as our states for memoization.
+
+You can check out this link for more information about the 0-1 knapsack: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
