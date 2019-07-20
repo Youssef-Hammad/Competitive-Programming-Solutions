@@ -1,0 +1,8 @@
+The file "solutionTLE.cpp" applies the top down approach for the problem. Which will unfortunately get you a TLE given the problem's constraints.
+
+The file "solutionAC.cpp" applies the bottom up approach Which solves the problem in around 0.8s. However, memory reduction is NOT applied in
+my bottom-up approach as i was (maybe still am) a beginner in writing a bottom up solution for dp problems.
+
+Bottom up approaches usually avoid building up the call stack (which happens through recursive calls) to save you memory.
+
+Here's a link for more info about Tabulation(bottom up) VS Memoization(top down): https://www.geeksforgeeks.org/tabulation-vs-memoization/
