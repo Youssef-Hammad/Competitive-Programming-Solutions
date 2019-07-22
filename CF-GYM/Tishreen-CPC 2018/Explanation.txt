@@ -1,0 +1,18 @@
+This solution applies sliding window on a 1D array which represents a 2D sub-array
+
+I've copied the explanation for creating all the 2D sub-arrays from a previous explanation (Uva/Maximum Sum)
+
+First off, we'll start by taking only the first column, then iterate over it to calculate the maximum sum using Kadane 1D.
+Then we take the first AND second columns, add each pair of elements together (for example a[0][0]+a[0][1], a[1][0]+a[1][1]) which will result
+in a 1D array. Then we can apply Kadane 1D to the resulting array and obtain the maximum sum from it, while maintaining the maximum sum we
+got so far from this process. Then we take the first 3 columns and add each 3 elements from the same row together (and so on).
+After that, you repeat the same steps but you start from the 2nd column this time (and repeat the whole process).
+Then again starting from the 3rd (and so on).
+
+After that step, everything is pretty much done, We then apply sliding window keeping in mind that we need to get the maximum valid area.
+Which is making sure after every sliding window iteration (inside the function) that we return the maximum window size multiplied by
+the start and end of the current 2D sub-array. And of course printing the maximum output produced from function slidingWindow
+
+You can read more about the sliding window technique here: https://www.geeksforgeeks.org/window-sliding-technique/
+
+Note: unlike the above link, the window size is not constant
