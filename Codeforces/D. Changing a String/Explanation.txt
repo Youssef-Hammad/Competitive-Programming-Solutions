@@ -1,0 +1,4 @@
+This solution applies a knapsack approach having 4 function calls. both s[i] and t[j] need to be the same to execute the 1th call
+
+Note: Sometimes in the case s[i]==t[j] Inserting/Deleting/Replacing may get you a more minimum solution than just moving to i+1 and j+1 without
+adding an operation to the whole output of the function. It took me a while to realize that which is why i'm mentioning it.
