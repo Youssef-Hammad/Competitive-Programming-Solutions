@@ -1,0 +1,3 @@
+The solution applies a naive 0-1 knapsack approach on every family member's max weight, then adds up all the results.
+
+You can check out this link for more information about the 0-1 knapsack: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
