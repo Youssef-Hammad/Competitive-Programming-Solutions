@@ -1,4 +1,0 @@
-This solution applies a knapsack similar to 0-1 knapsack. You either add the current element or subtract it (Note: The first element is
-always added positively) and returning whether or not the total value is divisible by k after reaching index n.
-
-You can check out this link for more information about the 0-1 knapsack: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
