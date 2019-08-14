@@ -1,0 +1,2 @@
+This solution applies dp+bitmask solution by trying every combination of pairing each 2 students together and choosing the minimal answer.
+While using bitmasking to keep track of which students have been taken in each instance.
