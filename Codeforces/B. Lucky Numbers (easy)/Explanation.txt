@@ -1,2 +1,0 @@
-This solution applies a bit-mask approach. Consider your mask consisting of 4 and 7 instead of 0 and 1. You'll try every permutation
-and choose only the valid ones, till you find the first valid permutation that's "not less than" integer n
