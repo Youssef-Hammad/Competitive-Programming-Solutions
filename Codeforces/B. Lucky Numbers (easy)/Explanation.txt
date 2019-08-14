@@ -1,0 +1,4 @@
+This solution applies a little modified version of brute force. Starting with a temp number consisting of the same digits as the original.
+Treating 4 and 7 as 0 and 1. Starting with the smallest balanced number (i.e 4477,444777, it's guaranteed that the solution is an even number of digits).
+Then incrementing a bit every iteration (and repeating the incrementation process) until a valid permutation is reached. Then the new permutation
+is compared with the original number until the answer is found.
